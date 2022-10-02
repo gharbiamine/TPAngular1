@@ -1,0 +1,12 @@
+<div [style.backgroundColor]="color">
+  The color of this div is {{ this.color }}
+</div>
+
+<input
+  type="text"
+  class="form-control"
+  #inputColor
+  (change)="changeColor(inputColor.value)"
+/>
+
+<button class="btn btn-danger" (click)="resetDefaultColor()">Reset</button>
